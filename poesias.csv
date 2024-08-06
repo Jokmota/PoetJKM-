@@ -1,0 +1,17 @@
+import panda as pd 
+
+poesias_romantismo = [
+
+]
+
+poesias_realismo = [
+
+]
+
+data = {
+    "texto": poesias_realismo + poesias_romantismo,
+    "genero": ["Romantismo"]* len(poesias_romantismo) + ["Realismo"]* len(poesias_realismo) 
+
+df = pd.DataFrame(data)
+
+df.to_csv("poesias.csv", index=false)
